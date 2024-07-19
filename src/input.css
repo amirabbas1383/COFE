@@ -50,20 +50,19 @@
 }
 
 @layer components {
-    #submenu{
-        @apply hiden flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+    #submenu {
+        @apply flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
     }
-    .submenu--open{
-        @apply flex;
-    }
+
     .submenu__item--active {
         @apply relative text-orange-300 pr-2.5;
     }
+
     .submenu__item--active::before {
         content: "";
         display: block;
         width: 4px;
-overflow: visible;
+        overflow: visible;
         height: 4px;
         border-radius: 100px;
         position: absolute;
@@ -71,7 +70,7 @@ overflow: visible;
         top: 0;
         bottom: 0;
         margin: auto;
-        background-color:  #FDBA74;
+        background-color: #FDBA74;
     }
 
 }
