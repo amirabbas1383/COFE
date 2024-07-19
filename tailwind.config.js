@@ -26,21 +26,42 @@ module.exports = {
         "morabbaLight": "morabba light",
         "morabbaBold": "morabba Bold",
       },
-      letterSpacing : {
-        "tightest" : "-0.065em"
+      letterSpacing: {
+        "tightest": "-0.065em"
       },
-      spacing : {
-        "30" : "7.5rem"
+      spacing: {
+        "30": "7.5rem"
+      },
+      container: {
+        center:true,
+        padding:{
+          default:"1rem",
+          lg:"0.625rem"
+        }
       }
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+    },
   },
-  
-    plugins: [
-      function ({ addVariant }) {
-          addVariant('child', '& > *');
-          addVariant('child-hover', '& > *:hover');
-      }
+
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    }
   ],
-  
+
 }
 
