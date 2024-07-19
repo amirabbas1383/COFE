@@ -432,20 +432,78 @@
 
 
         <!--side bar shoping mobile open & close-->
-        <div class="w-64 py-5 px-4 fixed min-h-screen z-20 top-0 left-0 bottom-0 bg-white dark:bg-zinc-700">
+        <div class="w-64 hidden flex-col py-5 px-4 fixed min-h-screen z-20 top-0 left-0 bottom-0 bg-white dark:bg-zinc-700">
             <!--header side shoping-->
-            <div class="flex justify-between items-center pb-5 border-b border-gray-100 mb-6 dark:border-white/10">
+            <div class="flex justify-between items-center pb-5 border-b border-gray-300 mb-6 dark:border-white/10">
                 <svg class="close-Side-list cursor-pointer w-6 h-6 text-zinc-600 dark:text-white">
                     <use href="#close"></use>
                 </svg>
-                <span class="bg-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
+                <span class="text-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
             </div>
-            <!--body soide -->
-            <div class="flex flex-col items-start pt-8  text-orange-300  mt-8 dark:border-white/10 space-y-6 px-2.5">
-
+            <!--body saide -->
+            <div class="overflow-y-auto">
+                <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10 mb-5 pb-5">
+                    <img style="width: 90px; height: 90px;" src="../img/CoffeeShop-Files/products/p1.png"
+                        alt="card shping" srcset="">
+                    <div class="flex flex-col gap-y-1.5 justify-between">
+                        <h4 class="font-DanaMedium line-clamp-2 text-xs text-zinc-700 dark:text-white">
+                            قهوه اسپرسو
+                            بن
+                            مانو مدل پریسکا 250 گرمی</h4>
+                        <div>
+                            <span
+                                class="text-teal-600 font-DanaMedium text-xs dark:text-emerald-500 tracking-tightest">14.500
+                                تومان تخفیف</span>
+                            <div class="text-zinc-700 dark:text-white font-Dana">
+                                <span class="font-DanaDemibold ">175,000 </span>
+                                <span class="font-Dana text-xs">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10 mb-5 pb-5">
+                    <img style="width: 90px; height: 90px;" src="../img/CoffeeShop-Files/products/p2.png"
+                        alt="card shping" srcset="">
+                    <div class="flex flex-col gap-y-1.5 justify-between">
+                        <h4 class="font-DanaMedium line-clamp-2 text-xs text-zinc-700 dark:text-white">
+                            قهوه اسپرسو
+                            بن
+                            مانو مدل پریسکا 250 گرمی</h4>
+                        <div>
+                            <span
+                                class="text-teal-600 font-DanaMedium text-xs dark:text-emerald-500 tracking-tightest">14.500
+                                تومان تخفیف</span>
+                            <div class="text-zinc-700 dark:text-white font-Dana">
+                                <span class="font-DanaDemibold ">175,000 </span>
+                                <span class="font-Dana text-xs">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            <!--footer side shoping mobile-->
+            <div class="flex gap-x-3 mt-auto">
+                <a style="flex-grow: 1 !important;"
+                    class="flex items-center font-dana justify-center text-white bg-teal-600 dark:bg-emerald-500 rounded-xl"
+                    href="#">ثبت سفارش</a>
+                <div class="">
+                    <span class="text-gray-300 tracking-tightest text-xs font-DanaMedium">مبلغ قابل
+                        پرداخت :</span>
+                    <div class="text-zinc-700 flex items-center gap-x-2 dark:text-white font-Dana">
+                        <span class="font-DanaDemibold">350,000 </span>
+                        <span class="font-Dana text-xs">تومان</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+
+
+
 
         <div class="flex justify-center items-center">
             <svg class="w-[100px] h-10 text-orange-300">
@@ -453,7 +511,7 @@
             </svg>
         </div>
 
-        <div>
+        <div class="open-side-shop">
             <svg class="w-6 h-6 dark:text-white">
                 <use href="#shoping-card"></use>
             </svg>
