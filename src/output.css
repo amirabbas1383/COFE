@@ -715,7 +715,6 @@ video {
     background-image: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url(../img/CoffeeShop-Files/body-bg.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 900px;
   }
 }
 
@@ -913,6 +912,10 @@ video {
   display: inline-flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -956,10 +959,6 @@ video {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-\[2000px\] {
-  height: 2000px;
 }
 
 .h-\[200px\] {
@@ -1084,6 +1083,14 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1110,6 +1117,18 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-3\.5 {
+  gap: 0.875rem;
 }
 
 .gap-x-1 {
@@ -1336,6 +1355,10 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1354,10 +1377,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-48 {
-  padding-top: 12rem;
 }
 
 .font-Dana {
@@ -1535,6 +1554,27 @@ video {
   display: inline-block;
 }
 
+.child\:h-\[460px\] > * {
+  height: 460px;
+}
+
+.child\:h-\[200px\] > * {
+  height: 200px;
+}
+
+.child\:rounded-2xl > * {
+  border-radius: 1rem;
+}
+
+.child\:child\:rounded-2xl > * > * {
+  border-radius: 1rem;
+}
+
+.child\:bg-white > * {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .child\:py-5 > * {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1550,6 +1590,12 @@ video {
 
 .child\:leading-\[56px\] > * {
   line-height: 56px;
+}
+
+.child\:shadow-normal > * {
+  --tw-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+  --tw-shadow-colored: 0px 1px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .child\:transition-colors > * {
@@ -1573,10 +1619,20 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .md\:mb-2 {
@@ -1615,8 +1671,20 @@ video {
     max-width: 460px;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .md\:bg-home-desktop {
     background-image: url(../img/CoffeeShop-Files/headerBgDesktop.webp);
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:text-2xl {
@@ -1633,9 +1701,25 @@ video {
     font-size: 3.75rem;
     line-height: 62px;
   }
+
+  .child\:md\:h-\[\] > * {
+    height: ;
+  }
+
+  .child\:md\:h-\[460px\] > * {
+    height: 460px;
+  }
+
+  .child\:md\:child\:rounded-2xl > * > * {
+    border-radius: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:gap-x-9 {
     -moz-column-gap: 2.25rem;
          column-gap: 2.25rem;
@@ -1644,6 +1728,10 @@ video {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 12rem;
   }
 }
 
@@ -1724,4 +1812,9 @@ video {
 .dark\:hover\:bg-emerald-600:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+}
+
+.dark\:child\:bg-zinc-700 > *:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
