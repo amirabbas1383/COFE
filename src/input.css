@@ -88,15 +88,29 @@
         @apply w-[95px] h-[95px] border-white/80
     }
 
-    html.dark .products{
-        background-image: url(../img/CoffeeShop-Files/body-bg.png);
-    }
-    .products {
-        background-image: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url(../img/CoffeeShop-Files/body-bg.png);
-        height: 900px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 900px;
+    @media screen and (min-width:1280px) {
+        html.dark .products {
+            background-image: url(../img/CoffeeShop-Files/body-bg.png);
+        }
+
+        .products {
+            background-image: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url(../img/CoffeeShop-Files/body-bg.png);
+            height: 900px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 900px;
+        }
     }
 
+    .section-title {
+        @apply md:text-5xl text-2xl text-zinc-700 dark:text-white font-morabbaMedium
+    }
+
+    .section-subtitle {
+        @apply inline-block text-lg md:text-3xl text-zinc-700 dark:text-white font-morabbaLight mt-0.5 md:mt-1.5
+    }
+
+    .section-link {
+        @apply flex items-center text-base md:text-xl text-orange-300 md:gap-x-1 transition-colors md:hover:bg-orange-300/20 h-10 pr-3 pl-1 rounded-md tracking-tightest
+    }
 }

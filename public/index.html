@@ -136,6 +136,12 @@
             xmlns="http://www.w3.org/2000/svg">
             <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
         </symbol>
+        <symbol id="chevron-mini-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+            class="size-5">
+            <path fill-rule="evenodd"
+                d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                clip-rule="evenodd" />
+        </symbol>
 
     </svg>
     <!--header desk-->
@@ -532,7 +538,8 @@
             </div>
 
             <!--curve-->
-            <svg class="text-gray-100 hidden md:inline-block bottom-0 right-0 left-0 mx-auto absolute w-[100px] h-[22px] dark:text-zinc-800">
+            <svg
+                class="text-gray-100 hidden md:inline-block bottom-0 right-0 left-0 mx-auto absolute w-[100px] h-[22px] dark:text-zinc-800">
                 <use href="#curve"></use>
             </svg>
             <!--arrow circle-->
@@ -546,8 +553,22 @@
 
 
         </section>
-        <section class="products">
-
+        <section class="products pt-48">
+            <div class="container">
+                <div class="flex justify-between items-end">
+                    <div cla class="">
+                        <h3 class="section-title">جدیدترین محصولات</h3>
+                        <span class="section-subtitle">فرآورده شده از دانه قهوه</span>
+                    </div>
+                    <a class="section-link" href="http://">
+                        <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+                        <span class="inline-block md:hidden">مشاهده همه</span>
+                        <svg class="w-5 h-5">
+                            <use href="#chevron-mini-left"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
