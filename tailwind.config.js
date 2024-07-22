@@ -38,9 +38,14 @@ module.exports = {
           default:"1rem",
           lg:"0.625rem"
         }
+      },
+      backgroundImage: {
+        "home-mobile" : "url(../img/CoffeeShop-Files/headerBgMobile.webp)",
+        "home-desktop" : "url(../img/CoffeeShop-Files/headerBgDesktop.webp)"
       }
     },
     screens: {
+      'xs': '480px',
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
