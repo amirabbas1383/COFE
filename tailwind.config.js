@@ -30,18 +30,20 @@ module.exports = {
         "tightest": "-0.065em"
       },
       spacing: {
-        "30": "7.5rem"
+        "30": "7.5rem",
+        "25": "6.25rem",
+        "50": "12.5rem"
       },
       container: {
-        center:true,
-        padding:{
-          default:"1rem",
-          lg:"0.625rem"
+        center: true,
+        padding: {
+          default: "1rem",
+          lg: "0.625rem"
         }
       },
       backgroundImage: {
-        "home-mobile" : "url(../img/CoffeeShop-Files/headerBgMobile.webp)",
-        "home-desktop" : "url(../img/CoffeeShop-Files/headerBgDesktop.webp)"
+        "home-mobile": "url(../img/CoffeeShop-Files/headerBgMobile.webp)",
+        "home-desktop": "url(../img/CoffeeShop-Files/headerBgDesktop.webp)"
       }
     },
     screens: {
