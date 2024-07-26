@@ -135,6 +135,16 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .swiper-button-prev-custom{
+        @apply  flex-center transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 w-9 h-9 shadow-normal rounded-full bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 md:w-10 md:h-10;
+    }
+    .swiper-button-next-custom{
+        @apply flex-center transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 w-9 h-9 shadow-normal rounded-full bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 md:w-10 md:h-10;
+    }
+      .swiper-slide{
+@apply child:rounded-2xl child:bg-white dark:child:bg-zinc-700 child:shadow-normal
+      }
+
 }
 
 @layer utilities{
