@@ -115,7 +115,8 @@
     .offer {
         @apply relative text-gray-400
     }
-    .offer::after{
+
+    .offer::after {
         content: "";
         width: 100%;
         height: 1px;
@@ -125,30 +126,35 @@
         margin: auto;
         background-color: #ef4444;
     }
-    .category-banner__item1{
-        background-image: linear-gradient(270deg,rgba(0, 0, 0, 0.6)33.85%, rgba(0, 0, 0, 0.1)100%), url(../img/CoffeeShop-Files/categories/category-right.jpg);
+
+    .category-banner__item1 {
+        background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.6)33.85%, rgba(0, 0, 0, 0.1)100%), url(../img/CoffeeShop-Files/categories/category-right.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .category-banner__item2{
-        background-image: linear-gradient(270deg,rgba(0, 0, 0, 0.6)33.85%, rgba(0, 0, 0, 0.1)100%), url(../img/CoffeeShop-Files/categories/category-left.jpg);
+
+    .category-banner__item2 {
+        background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.6)33.85%, rgba(0, 0, 0, 0.1)100%), url(../img/CoffeeShop-Files/categories/category-left.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .swiper-button-prev-custom{
-        @apply  flex-center transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 w-9 h-9 shadow-normal rounded-full bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 md:w-10 md:h-10;
-    }
-    .swiper-button-next-custom{
+
+    .swiper-button-prev-custom {
         @apply flex-center transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 w-9 h-9 shadow-normal rounded-full bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 md:w-10 md:h-10;
     }
-      .swiper-slide{
-@apply child:rounded-2xl child:bg-white dark:child:bg-zinc-700 child:shadow-normal
-      }
+
+    .swiper-button-next-custom {
+        @apply flex-center transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 w-9 h-9 shadow-normal rounded-full bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 md:w-10 md:h-10;
+    }
+
+    .swiper-slide {
+        @apply child:rounded-2xl child:bg-white dark:child:bg-zinc-700 child:shadow-normal
+    }
 
 }
 
-@layer utilities{
-    .flex-center{
+@layer utilities {
+    .flex-center {
         @apply flex justify-center items-center;
     }
 }
