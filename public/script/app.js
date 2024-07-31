@@ -19,6 +19,10 @@ toggleThemeBtn.forEach(btn => {
 })
 
 
+// auto text title main 
+
+
+
 //open & close sidebar menu mobile
 function OpenSide() {
     sideLeft.style.display = 'block'
